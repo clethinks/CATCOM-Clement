@@ -1,0 +1,23 @@
+/* Define the font styling here */
+
+/* Style the body background color here */
+
+/* Style common containers or wrappers here */
+
+/* Do not use !important here */
+
+@import url(./variables.css);
+@import url(./fonts.css);
+
+body {
+  overflow-x: hidden;
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
