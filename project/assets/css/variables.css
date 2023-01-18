@@ -7,4 +7,9 @@
   --dark-green: #073a4b;
   --light-green: #92b0ba;
   --light-x-green: #577681;
+
+  --width-sm: 576px;
+  --width-md: 768px;
+  --width-lg: 992px;
+  --width--xl: 1200px;
 }
