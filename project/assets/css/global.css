@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,10 +22,12 @@ body {
   max-width: 100vw;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
   padding: 0 2rem;
+  position: relative;
 }
 
 .section-title {
@@ -40,3 +43,14 @@ body {
   display: inline;
   border-radius: 50%;
 }
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  margin: 1rem;
+}
+

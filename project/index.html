@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/home.css" />
   <script src="https://kit.fontawesome.com/1fc7664841.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="https://res.cloudinary.com/dil0bx3qx/image/upload/v1662538390/logo_eo4g3z.jpg"  type="image/x-icon">
+  <link rel="icon" href="https://res.cloudinary.com/dil0bx3qx/image/upload/v1662538390/logo_eo4g3z.jpg"
+    type="image/x-icon">
   <title>Catholic Community Website</title>
 </head>
 
@@ -18,27 +19,63 @@
   </header>
   <!--header-->
 
+  <!-- <div class="w3-content w3-section" > -->
+
   <!--About section-->
-  <section class="About wrapper">
-    <div class="cards-container">
-      <div class="placeholder-card">
-        <div class="mantra-card">
-          <h1>CATCOM</h1>
-          “A vibrant Catholic Community for wholesome growth, a union for growing in love for oneself and others.”
-          <div class="divider"></div>
-          <span>"Pray,</span>
-          <span>Believe,</span>
-          <span>Worship.</span>
-        </div>
-        <div class="socials-card">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-        </div>
+  <section class="about wrapper">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./assets/images/slides/slide1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/images/slides/slide2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/images/slides/slide3.jpg" style="width:100%">
       </div>
     </div>
+
+    <div class="text-container">
+      <div class="about-title">
+        <span>CATCOM</span>
+        <br>
+        <p>
+          “A vibrant Catholic Community
+          for wholesome growth a union for
+          growing in love for oneself and others.”
+        </p>
+      </div>
+      <div class="divider"></div>
+      <div class="about-title">
+        <span>"Pray,</span><br>
+        <span>  Believe,</span><br>
+        <span>  Worship.</span><br>
+      </div>
+    </div>
+    <br>
+    <div class="socials-card">
+      <div class="icons">
+        <a href="https://twitter.com/jkuatcatcomhttps://twitter.com/jkuatcatcom" class="fa-brands fa-twitter fa-3x"target="_blank"></a>
+        <a href="https://www.instagram.com/catcomjkuat/" class="fa-brands fa-instagram fa-3x" target="_blank"></a>
+        <a href="https://wa.me/+254 743 728621" class="fa-brands fa-whatsapp fa-3x" target="_blank"></a>
+        <a href="https://www.facebook.com/jkuatcatcom" class="fa-brands fa-facebook-f fa-3x" target="_blank"></a>
+      </div>
+      <div class="join-us">
+        <a href="#">Join Us+</a>
+      </div>
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlides(1)"></span>
+      <span class="dot" onclick="currentSlides(2)"></span>
+      <span class="dot" onclick="currentSlides(3)"></span>
+    </div>
+
   </section>
+
   <!--About section-->
 
   <!--Events section-->
@@ -104,6 +141,7 @@
   <!--footer-->
   <footer></footer>
   <!--footer-->
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
