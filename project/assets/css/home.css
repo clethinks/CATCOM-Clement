@@ -35,7 +35,7 @@ img {
   display: flex;
   flex-direction: row;
   color: #f2f2f2;
-  background-color: var(--asphalt);;
+  background-color: var(--asphalt);
   padding: 2rem;
   margin-left: 3rem;
   max-width: 50%;
@@ -71,7 +71,7 @@ img {
 
 .join-us{
   color: #f2f2f2;
-  background-color: var(--asphalt);;
+  background-color: var(--asphalt);
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
