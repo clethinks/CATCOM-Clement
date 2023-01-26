@@ -258,3 +258,21 @@ p{
     display: block;
   }
 }
+.motto {
+  position: relative;
+  bottom: 10px; /*adds 20px of padding from the bottom */
+  left: 10px; /*adds 20px of padding from the left */
+  color: #fff; /* sets the text color to white */
+  font-size: 1.5em; /* sets the font size to 1.5 times the default size */
+  font-weight: bold; /* sets the text to bold */
+  text-shadow: 2px 2px #000; /* adds a black shadow to the text */
+}
+
+img.intro-bg {
+  position: relative;
+  bottom: 0px; /*adds 20px of padding from the bottom */
+  left: 10px; /*adds 20px of padding from the left */
+  width: 100px; /* sets the width of the image to 100px */
+  height: 100px; /* sets the height of the image to 100px */
+  object-fit: contain; /* scales the image to fit within the given width and height while maintaining its aspect ratio */
+}
