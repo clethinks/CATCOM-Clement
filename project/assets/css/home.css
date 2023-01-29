@@ -177,9 +177,9 @@ p{
 
 /* On smaller screens, decrease text size */
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width:768px) {
 .text-container{
-      min-width: 50%;
+      width: 50%;
       padding:3%;
     }
 .divider{
@@ -193,37 +193,19 @@ p{
   font-size: 1.5rem;
 padding: 0rem;
 margin :0rem;}
-.content-container p{font-size: 12px;}
+.about-title {font-size: 8px;}
 
-}
-
-/*small screens*/
-@media only screen and (min-width: 768px) {
-.text-container{
-    min-width: 60%;
-    margin-left:auto;}
-.content-container span{font-size: 2.3rem;
-margin:0px;}
-.content-container p{font-size: 1.0rem;}
 }
 
 /*large screens*/
 @media only screen and (min-width: 992px) {
 .text-container{
     min-width: 60%;
-    margin-left: 3rem}
+   }
 .content-container span{font-size: 2.5rem;}
-.content-container p{font-size:1.5rem;}
+.about-title p{font-size:1.5rem;}
 }
 
-/*extra large screens*/
-@media only screen and (min-width: 1200px) {
-  .text-container{
-    max-width: 40%;
-    margin-left: 4rem}
-.content-container span{font-size: 4rem;}
-.content-container p{font-size: 1.8rem;}
-}
 
 
 
