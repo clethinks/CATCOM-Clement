@@ -68,7 +68,10 @@
 .about-title{
   font-size: 1rem;
   font-weight: 500;
-  margin: 1rem;
+  justify-content: space-around;
+}
+.about-title:nth-child(2) {
+  justify-content: space-between;
 }
 
 .socials-card{
