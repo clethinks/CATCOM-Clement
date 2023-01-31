@@ -1,3 +1,15 @@
+/*change the right class of elements to the bar icon*/
+function myFunction() {
+    var x = document.getElementById("navRight");
+    if (x.className === "nav-right") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+
+
+/*change the background image of about section*/
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -19,3 +31,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
+
+
+

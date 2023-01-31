@@ -15,60 +15,65 @@
 <body>
   <!--header-->
   <section>
-    <nav class="navbar wrapper">
-      <div class="nav-right">
-        <img src="./assets/images/jkuatcatcomlogo-NoBg.png" alt="">
-        <h1>JKUAT CATCOM</h1>
-      </div>
+    <nav class="navbar">
       <div class="nav-left">
-        <a class="active" href="#home"><i class="fa-sharp fa-solid fa-house"></i></a>
+        <a href="index.html">
+          <div class="logo">
+            <img src="./assets/images/jkuatcatcomlogo-NoBg.png" alt="">
+          </div>
+        </a>
+        <div class="nav-title">
+          <h1>JKUAT CATCOM</h1>
+        </div>
+      </div>
+      </div>
+      <div class="nav-right" id="navRight">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home fa-2x"></i></a>
         <a href="about.html">About Us</a>
         <a href="events.html">Events</a>
         <a href="blog.html">Blog</a>
-        <a href="join-us.html">Join Us</a>
+        <a href="join-us.html">Join Us+</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </nav>
-
   </section>
   <!--header-->
 
-  <!-- <div class="w3-content w3-section" > -->
-
   <!--About section-->
-  <section class="about wrapper">
-    <div class="content-container">
-      <div class="text-container">
-        <div class="about-title">
-          <span>CATCOM</span><br>
-          <p>
-            “A vibrant Catholic Community for wholesome growth a union for growing in love for oneself and others.”
-          </p>
-        </div>
-        <div class="divider"></div>
-        <div class="about-title">
-          <span>"Pray,</span><br>
-          <span> Believe,</span><br>
-          <span> Worship.</span><br>
-        </div>
+  <section class="about">
+    <div class="text-container">
+      <div class="about-title">
+        <span>CATCOM</span><br>
+        <p>
+          “We are a vibrant Community for wholesome growth, a union for growing in love for oneself and others.
+        </p>
       </div>
-      <div class="socials-card">
-        <div class="icons">
-          <a href="https://twitter.com/jkuatcatcomhttps://twitter.com/jkuatcatcom" target="_blank"><i
-              class="fa-brands fa-square-twitter"></i></a>
-          <a href="https://www.instagram.com/catcomjkuat/" target="_blank"><i
-              class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://wa.me/+254 743 728621" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
-          <a href="https://www.facebook.com/jkuatcatcom" target="_blank"><i
-              class="fa-brands fa-square-facebook"></i></a>
-        </div>
-
-        <div class="join-us">
-          <a href="#">
-            <p>Join Us+</p>
-          </a>
-        </div>
+      <div class="divider"></div>
+      <div class="about-title">
+        <div class="span"><span>"Pray,</span><br></div>
+        <div class="span"><span> Believe,</span><br></div>
+        <div class="span"><span> Worship.</span><br></div>
       </div>
     </div>
+    <div class="socials-card">
+      <div class="icons">
+        <a href="https://twitter.com/jkuatcatcomhttps://twitter.com/jkuatcatcom" target="_blank"><i
+            class="fa-brands fa-square-twitter fa-3x"></i></a>
+        <a href="https://www.instagram.com/catcomjkuat/" target="_blank"><i
+            class="fa-brands fa-square-instagram fa-3x"></i></a>
+        <a href="https://wa.me/+254 743 728621" target="_blank"><i class="fa-brands fa-square-whatsapp fa-3x"></i></a>
+        <a href="https://www.facebook.com/jkuatcatcom fa-3x" target="_blank"><i
+            class="fa-brands fa-square-facebook fa-3x"></i></a>
+      </div>
+    </div>
+    <div class="join-us">
+      <a href="#">
+        Join Us+
+      </a>
+    </div>
+
     <br>
     <div style="text-align: center;">
       <span class="dot" onclick="currentSlides(1)"></span>
@@ -103,7 +108,7 @@
   <!--Leader's Quote section-->
 
   <!--From the community section-->
-  <section class=" from-community wrapper">
+  <section class="from-community wrapper">
     <h1 class="section-title">From the community</h1>
     <div class="cards-container">
       <div class="from-community-card">
