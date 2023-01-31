@@ -1,6 +1,12 @@
 @import url(./variables.css);
 @import url(./global.css);
 
+/*styling navigation bar*/
+.navbar{
+    display:flex;
+    overflow: hidden;
+    background-color: var(--catcom-blue);
+  }
 /*styling about section*/
 .about {
     display: flex;
@@ -298,13 +304,14 @@ p {
 .contacts{
     display:flex;
     flex-direction: column;
-    max-width: 30%;
-    padding:3%;
+    min-width: 30%;
+    margin:3%;
 }
 
 
 .motto{   
     background-color: var(--catcom-blue);
+    align-items: center;
 }
 
 .motto img{
