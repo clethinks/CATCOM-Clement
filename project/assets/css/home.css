@@ -190,6 +190,8 @@
     justify-content: center;
 }
 .span{
+    display:flex;
+    align-items: center;
     padding-top: 1rem;
 }
 
@@ -222,8 +224,9 @@
 }
 
 p {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 5px 5px 5px 0px;
+    margin:0.5rem;
 }
 
 
@@ -397,6 +400,8 @@ p {
 
 .motto {
     background-color: var(--catcom-blue);
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
 
