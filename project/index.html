@@ -14,31 +14,26 @@
 
 <body>
   <!--header-->
-  <section>
-    <nav class="navbar">
-      <div class="nav-left">
-        <a href="index.html">
-          <div class="logo">
-            <img src="./assets/images/jkuatcatcomlogo-NoBg.png" alt="">
-          </div>
-        </a>
-        <div class="nav-title">
-          <h1>JKUAT CATCOM</h1>
-        </div>
+  <nav>
+    <div class="logo">
+      <img src="./assets/images/jkuatcatcomlogo-NoBg.png" alt="Logo">
+      <div>
+        CATCOM
       </div>
-      </div>
-      <div class="nav-right" id="navRight">
-        <a class="active" href="index.html"><i class="fa fa-fw fa-home fa-2x"></i></a>
-        <a href="about.html">About Us</a>
-        <a href="events.html">Events</a>
-        <a href="blog.html">Blog</a>
-        <a href="join-us.html">Join Us+</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </nav>
-  </section>
+    </div>
+    <ul class="links">
+      <li><a href="#"><i class="fa fa-fw fa-home"></i></a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="join-us.html">Join Us+</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
   <!--header-->
 
   <!--About section-->
@@ -73,25 +68,21 @@
         Join Us+
       </a>
     </div>
-
-    <br>
-    <div style="text-align: center;">
-      <span class="dot" onclick="currentSlides(1)"></span>
-      <span class="dot" onclick="currentSlides(2)"></span>
-      <span class="dot" onclick="currentSlides(3)"></span>
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
-    </div>
-    </div>
-    <div class="slideshow-container">
-      <div class="mySlides fade">
+    <div class="carousel">
+      <div class="slides fade">
         <img src="./assets/images/slides/slide1.jpg" style="width:100%">
       </div>
 
-      <div class="mySlides fade">
+      <div class="slides fade">
         <img src="./assets/images/slides/slide2.jpg" style="width:100%">
       </div>
 
-      <div class="mySlides fade">
+      <div class="slides fade">
         <img src="./assets/images/slides/slide3.jpg" style="width:100%">
       </div>
     </div>
@@ -246,10 +237,6 @@
 
   <!--footer-->
   <footer>
-    <div class="contacts motto">
-      <img src="./assets/images/jkuatcatcomlogo.png" class="intro-bg" alt="" />
-      <p>A Praying, Believing and <br> Worshipping Community.</p>
-    </div>
   </footer>
   <!--footer-->
   <script src="./assets/js/app.js"></script>
