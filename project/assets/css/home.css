@@ -524,6 +524,7 @@ p {
 
 /*styling the content section*/
 
+
 .card {
     background-color: rgba(16, 3, 104, 0.932);
     overflow: auto;
@@ -592,24 +593,5 @@ button:hover {
     height: 100%;
     object-fit: cover;
 }
-
->>>> main
-}
-
-.card h1 {
-    text-align: center;
-}
-
-h3 {
-    font-size: 20px;
-    color: #f8e005;
-}
-
-
-.inner-cont {
-    display: flex;
-    align-items: center;
-}
-
 
 
