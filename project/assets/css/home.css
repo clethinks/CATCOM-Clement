@@ -1,73 +1,249 @@
 @import url(./variables.css);
 @import url(./global.css);
 
-/*styling about section*/
+/*styling navigation bar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--catcom-blue);
+}
 
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 75px;
+}
+
+.nav-title {
+    font-size: 2.5rem;
+}
+
+.nav-right {
+    padding: 10px;
+}
+
+/* Style the links inside the navigation bar 
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+
+/* Add an active class to highlight the current page 
+.navbar a.active {
+    background-color: var(--catcom-blue);
+    color: var(--light-blue)
+}
+
+/* Hide the link that should open and close the topnav on small screens 
+.navbar .icon {
+    display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
+@media screen and (max-width: 576px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--catcom-blue);
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 50px;
+    left: 0px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin-right: 20px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover*/
+.links a:hover {
+    background-color: var(--light-gray);
+    color: black;
+}
+
+.links.open {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    background-color: var(--asphalt);
+    padding: 10px;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*styling about section*/
 .about {
     display: flex;
     flex-direction: column;
+    align-items: space-between;
     box-sizing: border-box;
     min-width: 100%;
-    height: auto;
-    margin: auto;
     position: relative;
-    height: 50rem;
     overflow: hidden;
-    clear: both;
+    height: 40rem;
+    margin-bottom: 2rem;
 }
 
 
 /* Slideshow container */
-
-.slideshow-container {
-    min-width: 100%;
+.carousel {
     position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.slides {
+    width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-/*content-container*/
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    display: flex;
-    top: 5rem;
-    z-index: 2;
-}
-
-
-/*text-container*/
-
-.text-container {
-    display: flex;
-    flex-direction: space-evenly;
-    color: #f2f2f2;
-    background-color: var(--asphalt);
-    ;
-    padding: 2rem;
-    margin-left: 3rem;
-    max-width: 50%;
-    border-radius: 1rem;
-    max-width: 60%;
-}
-
-.socials-card {
-    padding-left: inherit;
-    padding-top: 10rem;
-}
-
-.mySlides {
-    max-height: 10rem;
-}
-
-.mySlides img {
+.slides img {
     vertical-align: middle;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
 }
 
+
+
+/*text-container*/
+.text-container {
+    display: flex;
+    flex-direction: space-evenly;
+    z-index: 1;
+    color: #f2f2f2;
+    background-color: var(--asphalt);
+    ;
+    padding: 1rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+    max-width: 40%;
+    border-radius: 1rem;
+}
+/*socials-card*/
+.socials-card {
+    padding-left: inherit;
+    padding-top: 10rem;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 1;
+    display: flex;
+    align-items: space-between;
+}
 .divider {
     background-color: white;
     margin: 1rem;
@@ -80,55 +256,65 @@
     font-weight: 500;
     justify-content: space-around;
 }
-
 .about-title:nth-child(2) {
-    justify-content: space-between;
-}
-
-.socials-card {
     display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.join-us {
-    color: #f2f2f2;
-    background-color: var(--asphalt);
-    border-radius: 1rem;
+.span {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
 }
-
-span {
+.about-title span {
     padding: 1rem;
     margin: 0px;
     text-align: center;
+    font-size: 48px;
 }
 
 p {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 5px 5px 5px 0px;
+    margin: 0.5rem;
 }
 
 
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(9, 9, 9);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
+/*join us*/
+.join-us {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
     background-color: var(--asphalt);
+    border-radius: 2rem;
+    position: absolute;
+    z-index: 1;
+    right: 3rem;
+    bottom: 3rem;
 }
 
+/*dot*/
+.dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:2rem;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 10px;
+}
+  
+  .dot.active {
+    background-color: #000;
+  }
 
 /* Fading animation */
 
@@ -143,6 +329,7 @@ p {
     from {
         opacity: .2
     }
+
     to {
         opacity: 1
     }
@@ -152,6 +339,7 @@ p {
     from {
         opacity: .2
     }
+
     to {
         opacity: 1
     }
@@ -161,6 +349,7 @@ p {
     from {
         opacity: .2
     }
+
     to {
         opacity: 1
     }
@@ -170,6 +359,7 @@ p {
     from {
         opacity: .2
     }
+
     to {
         opacity: 1
     }
@@ -179,48 +369,25 @@ p {
     from {
         opacity: .2
     }
+
     to {
         opacity: 1
     }
 }
 
-
-/* On smaller screens, decrease text size */
-
-@media only screen and (min-width:768px) {
+@media (max-width: 800px) {
     .text-container {
+        margin: auto;
         width: 50%;
-        padding: 3%;
+        padding: 10px;
     }
-    .divider {
-        min-width: 0.1rem;
-    }
-    .dot {
-        height: 10px;
-        width: 10px;
-    }
-    .content-container span {
-        font-size: 1.5rem;
-        padding: 0rem;
-        margin: 0rem;
-    }
-    .about-title {
-        font-size: 8px;
-    }
-}
 
-
-/*large screens*/
-
-@media only screen and (min-width: 992px) {
-    .text-container {
-        min-width: 60%;
+    .about-title span {
+        font-size: 24px;
     }
-    .content-container span {
-        font-size: 2.5rem;
-    }
+
     .about-title p {
-        font-size: 1.5rem;
+        font-size: 12px;
     }
 }
 
@@ -233,6 +400,7 @@ p {
     row-gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .from-community .cards-container .from-community-card {
@@ -283,46 +451,76 @@ p {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .from-community .cards-container .from-community-card>div {
         width: 50%;
     }
+
     .from-community .cards-container .from-community-card>div:first-child {
         width: 40%;
         display: block;
     }
 }
 
+
+/*styling conta Us section*/
+.contact-us {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    margin: 3%;
+}
+
+
 .motto {
-    position: relative;
-    bottom: 10px;
-    /*adds 20px of padding from the bottom */
-    left: 10px;
-    /*adds 20px of padding from the left */
-    color: #fff;
-    /* sets the text color to white */
-    font-size: 1.5em;
-    /* sets the font size to 1.5 times the default size */
-    font-weight: bold;
-    /* sets the text to bold */
-    text-shadow: 2px 2px #000;
-    /* adds a black shadow to the text */
+    background-color: var(--catcom-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img.intro-bg {
-    position: relative;
-    bottom: 0px;
-    /*adds 20px of padding from the bottom */
-    left: 10px;
-    /*adds 20px of padding from the left */
-    width: 100px;
-    /* sets the width of the image to 100px */
-    height: 100px;
-    /* sets the height of the image to 100px */
-    object-fit: contain;
-    /* scales the image to fit within the given width and height while maintaining its aspect ratio */
+.motto img {
+    max-width: 70%;
+    margin: 0.5rem;
 }
 
-@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*styling the content section*/
 
@@ -395,13 +593,7 @@ button:hover {
     object-fit: cover;
 }
 
-.img-2 {
-    float: right;
-    width: 100%;
-    height: 100%;
-    padding-right: 15px;
-    margin: 2px;
-    margin-left: 0%;
+>>>> main
 }
 
 .card h1 {
@@ -413,10 +605,6 @@ h3 {
     color: #f8e005;
 }
 
-h1 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
 
 .inner-cont {
     display: flex;
@@ -424,4 +612,4 @@ h1 {
 }
 
 
-/*end of contnent part*/
+
