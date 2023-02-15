@@ -1,0 +1,23 @@
+.navbar-brand{
+    display:flex;
+    align-items: center;
+}
+
+img{
+    width:3.5rem;
+    height:3rem;
+    padding-right: 1rem;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link.active-link
+{
+    background-color: var(--catcom-blue);
+    color: var(--light-blue);
+    font-weight: bold;
+}
+
+
+
+
+
+
