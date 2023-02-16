@@ -1,0 +1,5 @@
+<!-- Page header with logo and tagline-->
+
+<main *ngIf="blogPosts$ | async as blogPosts">
+    {{blogPosts$ | json}}
+  </main>
