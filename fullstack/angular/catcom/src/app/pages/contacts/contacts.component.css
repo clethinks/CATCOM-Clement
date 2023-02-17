@@ -1,0 +1,20 @@
+.info-wrap {
+    background-color: var(--light-gray);
+    color: black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.contact-wrap{
+    background: linear-gradient(to right, #000099 0%, #9933ff 100%);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.label{
+    color:yellow;
+}
+
+
+.row .text-center{
+    padding:3rem;
+    font-size: 48px;
+}
