@@ -1,5 +1,5 @@
 {
-  "name": "fullstack",
+  "name": "server",
   "version": "1.0.0",
   "description": "backend",
   "main": "app.js",
@@ -8,14 +8,13 @@
     "start": "node app"
   },
   "dependencies": {
-    "express":"*",
-    "mongoose":"*",
-    "bcryptjs":"*",
-    "cors":"*",
-    "jsonwebtoken":"*",
-    "body-parser":"*",
-    "passport-jwt":"*"
+    "express":"",
+    "mongoose":"",
+    "bcryptjs":"",
+    "jsonwebtoken":"",
+    "body-parser":"",
+    "passport-jwt":""
   },
-  "author": "Mwega",
+  "author": "mwega",
   "license": "ISC"
 }
