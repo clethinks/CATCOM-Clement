@@ -7,7 +7,7 @@
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex align-items-stretch">
           <div class="w-100 p-md-5 p-4">
             <h3>Let's get in touch</h3>
             <div class="dbox w-100 d-flex align-items-start">
@@ -67,81 +67,77 @@
           </div>
         </div>
         <!--Grid column-->
-        <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
-          <div class="w-100 p-md-5">
-            <h3>Frequently Asked Questions</h3>
-            <div class="accordion" id="faqAccordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      How do I create a new account?
-                    </button>
-                  </h5>
+        <div class="col-lg-4 col-md-12">
+          <div class="container">
+            <h3>Requently Asked Questions</h3>
+            <div class="row">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button id="myButton" class="btn btn-primary">Click me</button>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        What is Bootstrap?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Bootstrap is a popular front-end framework for building responsive, mobile-first websites and
+                      web applications.
+                    </div>
+                  </div>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                  <div class="card-body">
-                    To create a new account, click on the "Sign Up" button and fill out the registration form.
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        What are the benefits of using Bootstrap?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Bootstrap offers a number of benefits, including:
+                      <ul>
+                        <li>Responsive design</li>
+                        <li>Cross-browser compatibility</li>
+                        <li>Easy customization</li>
+                        <li>Large community and resources</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        How do I get started with Bootstrap?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      You can get started with Bootstrap by downloading the framework from the official website and
+                      including the necessary files in your project. Alternatively, you can use a content delivery
+                      network (CDN) to include the framework in your project.
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      How do I reset my password?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                  <div class="card-body">
-                    To reset your password, click on the "Forgot Password" link and follow the instructions to reset
-                    your password.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      What payment methods do you accept?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                  <div class="card-body">
-                    We accept all major credit cards, as well as PayPal and Apple Pay.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" id="headingFour">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      How do I contact customer support?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                  <div class="card-body">
-                    You can contact our customer support team by email or phone. Visit our Contact Us page for more
-                    information.
-                  </div>
-                </div>
-              </div>
-
 
             </div>
-
-            <!--Grid column-->
           </div>
+
+
+
+
+
+          <!--Grid column-->
+
           <!--Grid column-->
         </div>
         <!--Grid row-->
@@ -286,3 +282,80 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+
+
+<section id="contact-us" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <h3>Contact Us</h3>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown USA</li>
+          <li><i class="fas fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fas fa-envelope"></i> info@example.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <h3>Quick Links</h3>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <h3>FAQ</h3>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                  aria-controls="collapse1">
+                  What is your return policy?
+                </button>
+              </h5>
+            </div>
+            <div id="collapse1" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Our return policy is 30 days. Please contact us if you need to return an item.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                  aria-controls="collapse2">
+                  What payment methods do you accept?
+                </button>
+              </h5>
+            </div>
+            <div id="collapse2" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                We accept Visa, Mastercard, American Express, and PayPal.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                  aria-controls="collapse3">
+                  Do you offer free shipping?
+                </button>
+              </h5>
+            </div>
+            <div id="collapse3" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Yes, we offer free shipping on orders over $50.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
