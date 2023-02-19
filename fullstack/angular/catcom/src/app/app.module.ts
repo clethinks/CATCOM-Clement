@@ -10,7 +10,6 @@ import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
-import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -23,7 +22,7 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
     FooterComponent,
     BlogComponent,
     ContactsComponent,
-    DashboardComponent,
+   
   ],
   imports: [
     BrowserModule,

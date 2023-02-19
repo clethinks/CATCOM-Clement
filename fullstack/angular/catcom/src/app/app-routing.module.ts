@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'events',component:EventsComponent},
   {path:'contacts',component:ContactsComponent},
-  {path:'blog',component:BlogComponent}
+  {path:'blog',component:BlogComponent},
 
 ];
 
