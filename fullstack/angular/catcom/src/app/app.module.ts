@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,10 @@ import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { LogInComponent } from './pages/log-in/log-in.component';
+
+
 
 
 @NgModule({
@@ -22,11 +26,14 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
     FooterComponent,
     BlogComponent,
     ContactsComponent,
+    SignUpComponent,
+    LogInComponent
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
