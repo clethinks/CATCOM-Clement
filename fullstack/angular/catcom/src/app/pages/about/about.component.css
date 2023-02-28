@@ -27,11 +27,7 @@
 }
 
 
-.scc{
-    padding-top: 30px;
-  padding-left: 30px;
-  padding-right:30px;
-}
+
 
 
 .card{
@@ -43,7 +39,7 @@
 
 .card-body{
   border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px #201f1f;
+  
 }
 
 .choir{

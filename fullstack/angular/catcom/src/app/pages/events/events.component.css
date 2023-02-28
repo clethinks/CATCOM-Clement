@@ -24,20 +24,21 @@
     height: 200px;
 }
 
-
-
-
-.events-card {
-    background-color: var(--light-blue);
+.event-icon{
+    padding:20px;
+    background-color: var(--catcom-blue);
+    border-radius: 50%;
 }
+
+
+
 
 .card-img-top {
     max-height: 200px;
 }
 
 .card-body {
-    background-color: var(--catcom-blue);
-    border-radius: 3px;
+       border-radius: 3px;
 }
 
 .card {
